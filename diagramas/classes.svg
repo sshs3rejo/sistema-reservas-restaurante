@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="860" viewBox="0 0 1220 860" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="1220" height="860" fill="#fff" stroke="none"/>
+<rect x="500" y="40" width="250" height="157" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Pessoa"/>
+<text x="625" y="61" font-size="14" font-weight="bold" font-style="italic" fill="#000" text-anchor="middle" pointer-events="none">«abstract» Pessoa</text>
+<text x="510" y="91" font-size="12.5" fill="#000" pointer-events="none">- id : int</text>
+<text x="510" y="108" font-size="12.5" fill="#000" pointer-events="none">- nome : string</text>
+<text x="510" y="125" font-size="12.5" fill="#000" pointer-events="none">- telefone : string</text>
+<text x="510" y="142" font-size="12.5" fill="#000" pointer-events="none">- cpf : string</text>
+<text x="510" y="159" font-size="12.5" fill="#000" pointer-events="none">- email : string</text>
+<text x="510" y="176" font-size="12.5" fill="#000" pointer-events="none">+ Tipo() (abstract)</text>
+<text x="510" y="193" font-size="12.5" fill="#000" pointer-events="none">+ ExibirInformacoes() : string</text>
+<rect x="60" y="250" width="230" height="106" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Cliente"/>
+<text x="175" y="271" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Cliente</text>
+<text x="70" y="301" font-size="12.5" fill="#000" pointer-events="none">- qtdVisitas : int</text>
+<text x="70" y="318" font-size="12.5" fill="#000" pointer-events="none">+ NivelFidelidade : string</text>
+<text x="70" y="335" font-size="12.5" fill="#000" pointer-events="none">+ obterNivelFidelidade()</text>
+<text x="70" y="352" font-size="12.5" fill="#000" pointer-events="none">+ Tipo() : string</text>
+<rect x="420" y="250" width="280" height="140" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Funcionario"/>
+<text x="560" y="271" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Funcionario</text>
+<text x="430" y="301" font-size="12.5" fill="#000" pointer-events="none">- cargo : string</text>
+<text x="430" y="318" font-size="12.5" fill="#000" pointer-events="none">- turno : Turno</text>
+<text x="430" y="335" font-size="12.5" fill="#000" pointer-events="none">+ confirmarReserva(r : Reserva)</text>
+<text x="430" y="352" font-size="12.5" fill="#000" pointer-events="none">+ reagendarReserva(r : Reserva,</text>
+<text x="430" y="369" font-size="12.5" fill="#000" pointer-events="none">    d : DateTime)</text>
+<text x="430" y="386" font-size="12.5" fill="#000" pointer-events="none">+ Tipo() : string</text>
+<rect x="420" y="430" width="310" height="106" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Gerente"/>
+<text x="575" y="451" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Gerente</text>
+<text x="430" y="481" font-size="12.5" fill="#000" pointer-events="none">- setor : string</text>
+<text x="430" y="498" font-size="12.5" fill="#000" pointer-events="none">+ gerenciarMesas()</text>
+<text x="430" y="515" font-size="12.5" fill="#000" pointer-events="none">+ gerarRelatorio(res : List, data) : List</text>
+<text x="430" y="532" font-size="12.5" fill="#000" pointer-events="none">+ Tipo() : string</text>
+<rect x="860" y="40" width="300" height="225" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Restaurante"/>
+<text x="1010" y="61" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Restaurante</text>
+<text x="870" y="91" font-size="12.5" fill="#000" pointer-events="none">- nome : string</text>
+<text x="870" y="108" font-size="12.5" fill="#000" pointer-events="none">- endereco : string</text>
+<text x="870" y="125" font-size="12.5" fill="#000" pointer-events="none">- mesas : List&amp;lt;Mesa&gt;</text>
+<text x="870" y="142" font-size="12.5" fill="#000" pointer-events="none">- reservas : List&amp;lt;Reserva&gt;</text>
+<text x="870" y="159" font-size="12.5" fill="#000" pointer-events="none">+ consultarDisponibilidade(d :</text>
+<text x="870" y="176" font-size="12.5" fill="#000" pointer-events="none">    DateTime, n : int) : List&amp;lt;Mesa&gt;</text>
+<text x="870" y="193" font-size="12.5" fill="#000" pointer-events="none">+ realizarReserva(c : Cliente, m :</text>
+<text x="870" y="210" font-size="12.5" fill="#000" pointer-events="none">    Mesa, d : DateTime, n : int, o :</text>
+<text x="870" y="227" font-size="12.5" fill="#000" pointer-events="none">    Pessoas) : Reserva</text>
+<text x="870" y="244" font-size="12.5" fill="#000" pointer-events="none">+ agendaDoDia(d : DateTime) :</text>
+<text x="870" y="261" font-size="12.5" fill="#000" pointer-events="none">    List&amp;lt;Reserva&gt;</text>
+<rect x="921.7074877536738" y="324.78155339805824" width="210" height="140" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Mesa"/>
+<text x="1026.7074877536738" y="345.78155339805824" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Mesa</text>
+<text x="931.7074877536738" y="375.78155339805824" font-size="12.5" fill="#000" pointer-events="none">- numero : int</text>
+<text x="931.7074877536738" y="392.78155339805824" font-size="12.5" fill="#000" pointer-events="none">- capacidade : int</text>
+<text x="931.7074877536738" y="409.78155339805824" font-size="12.5" fill="#000" pointer-events="none">- localizacao : string</text>
+<text x="931.7074877536738" y="426.78155339805824" font-size="12.5" fill="#000" pointer-events="none">- status : StatusMesa</text>
+<text x="931.7074877536738" y="443.78155339805824" font-size="12.5" fill="#000" pointer-events="none">+ estaDisponivel() : bool</text>
+<text x="931.7074877536738" y="460.78155339805824" font-size="12.5" fill="#000" pointer-events="none">+ ToString()</text>
+<rect x="920" y="520" width="240" height="157" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="box_Reserva"/>
+<text x="1040" y="541" font-size="14" font-weight="bold" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">Reserva</text>
+<text x="930" y="571" font-size="12.5" fill="#000" pointer-events="none">- idReserva : int</text>
+<text x="930" y="588" font-size="12.5" fill="#000" pointer-events="none">- dataHora : DateTime</text>
+<text x="930" y="605" font-size="12.5" fill="#000" pointer-events="none">- numeroPessoas : int</text>
+<text x="930" y="622" font-size="12.5" fill="#000" pointer-events="none">- status : StatusReserva</text>
+<text x="930" y="639" font-size="12.5" fill="#000" pointer-events="none">+ confirmar(f : Funcionario)</text>
+<text x="930" y="656" font-size="12.5" fill="#000" pointer-events="none">+ cancelar()</text>
+<text x="930" y="673" font-size="12.5" fill="#000" pointer-events="none">+ concluir()</text>
+<rect x="80" y="730" width="230" height="110" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="en_StatusReserva"/>
+<text x="195" y="751" font-size="14" font-weight="bold" fill="#000" text-anchor="middle" pointer-events="none">«enum» StatusReserva</text>
+<line x1="80" y1="764" x2="310" y2="764" stroke="#000" stroke-width="1.5"/>
+<text x="90" y="781" font-size="12.5" fill="#000" pointer-events="none">Pendente</text>
+<text x="90" y="798" font-size="12.5" fill="#000" pointer-events="none">Confirmada</text>
+<text x="90" y="815" font-size="12.5" fill="#000" pointer-events="none">Cancelada</text>
+<text x="90" y="832" font-size="12.5" fill="#000" pointer-events="none">Concluida</text>
+<rect x="330" y="730" width="200" height="90" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="en_StatusMesa"/>
+<text x="430" y="751" font-size="14" font-weight="bold" fill="#000" text-anchor="middle" pointer-events="none">«enum» StatusMesa</text>
+<line x1="330" y1="764" x2="530" y2="764" stroke="#000" stroke-width="1.5"/>
+<text x="340" y="781" font-size="12.5" fill="#000" pointer-events="none">Disponivel</text>
+<text x="340" y="798" font-size="12.5" fill="#000" pointer-events="none">Reservada</text>
+<text x="340" y="815" font-size="12.5" fill="#000" pointer-events="none">Indisponivel</text>
+<rect x="550" y="730" width="170" height="70" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="en_Turno"/>
+<text x="635" y="751" font-size="14" font-weight="bold" fill="#000" text-anchor="middle" pointer-events="none">«enum» Turno</text>
+<line x1="550" y1="764" x2="720" y2="764" stroke="#000" stroke-width="1.5"/>
+<text x="560" y="781" font-size="12.5" fill="#000" pointer-events="none">Manha / Tarde / Noite</text>
+<line x1="500" y1="74" x2="750" y2="74" stroke="#000" stroke-width="1.5" data-grab="s1_box_Pessoa"/>
+<line x1="500" y1="74" x2="750" y2="74" stroke="transparent" stroke-width="14" data-grab="s1_box_Pessoa"/>
+<line x1="500" y1="162.60679611650485" x2="750" y2="162.60679611650485" stroke="#000" stroke-width="1.5" data-grab="s2_box_Pessoa"/>
+<line x1="500" y1="162.60679611650485" x2="750" y2="162.60679611650485" stroke="transparent" stroke-width="14" data-grab="s2_box_Pessoa"/>
+<line x1="60" y1="284" x2="290" y2="284" stroke="#000" stroke-width="1.5" data-grab="s1_box_Cliente"/>
+<line x1="60" y1="284" x2="290" y2="284" stroke="transparent" stroke-width="14" data-grab="s1_box_Cliente"/>
+<line x1="60" y1="321.3058252427184" x2="290" y2="321.3058252427184" stroke="#000" stroke-width="1.5" data-grab="s2_box_Cliente"/>
+<line x1="60" y1="321.3058252427184" x2="290" y2="321.3058252427184" stroke="transparent" stroke-width="14" data-grab="s2_box_Cliente"/>
+<line x1="420" y1="284" x2="700" y2="284" stroke="#000" stroke-width="1.5" data-grab="s1_box_Funcionario"/>
+<line x1="420" y1="284" x2="700" y2="284" stroke="transparent" stroke-width="14" data-grab="s1_box_Funcionario"/>
+<line x1="420" y1="322.65048543689323" x2="700" y2="322.65048543689323" stroke="#000" stroke-width="1.5" data-grab="s2_box_Funcionario"/>
+<line x1="420" y1="322.65048543689323" x2="700" y2="322.65048543689323" stroke="transparent" stroke-width="14" data-grab="s2_box_Funcionario"/>
+<line x1="420" y1="464" x2="730" y2="464" stroke="#000" stroke-width="1.5" data-grab="s1_box_Gerente"/>
+<line x1="420" y1="464" x2="730" y2="464" stroke="transparent" stroke-width="14" data-grab="s1_box_Gerente"/>
+<line x1="420" y1="486.6941747572815" x2="730" y2="486.6941747572815" stroke="#000" stroke-width="1.5" data-grab="s2_box_Gerente"/>
+<line x1="420" y1="486.6941747572815" x2="730" y2="486.6941747572815" stroke="transparent" stroke-width="14" data-grab="s2_box_Gerente"/>
+<line x1="860" y1="74" x2="1160" y2="74" stroke="#000" stroke-width="1.5" data-grab="s1_box_Restaurante"/>
+<line x1="860" y1="74" x2="1160" y2="74" stroke="transparent" stroke-width="14" data-grab="s1_box_Restaurante"/>
+<line x1="860" y1="145.60679611650485" x2="1160" y2="145.60679611650485" stroke="#000" stroke-width="1.5" data-grab="s2_box_Restaurante"/>
+<line x1="860" y1="145.60679611650485" x2="1160" y2="145.60679611650485" stroke="transparent" stroke-width="14" data-grab="s2_box_Restaurante"/>
+<line x1="921.7074877536738" y1="358.78155339805824" x2="1131.7074877536738" y2="358.78155339805824" stroke="#000" stroke-width="1.5" data-grab="s1_box_Mesa"/>
+<line x1="921.7074877536738" y1="358.78155339805824" x2="1131.7074877536738" y2="358.78155339805824" stroke="transparent" stroke-width="14" data-grab="s1_box_Mesa"/>
+<line x1="921.7074877536738" y1="430.3883495145632" x2="1131.7074877536738" y2="430.3883495145632" stroke="#000" stroke-width="1.5" data-grab="s2_box_Mesa"/>
+<line x1="921.7074877536738" y1="430.3883495145632" x2="1131.7074877536738" y2="430.3883495145632" stroke="transparent" stroke-width="14" data-grab="s2_box_Mesa"/>
+<line x1="920" y1="554" x2="1160" y2="554" stroke="#000" stroke-width="1.5" data-grab="s1_box_Reserva"/>
+<line x1="920" y1="554" x2="1160" y2="554" stroke="transparent" stroke-width="14" data-grab="s1_box_Reserva"/>
+<line x1="920" y1="624.5631067961165" x2="1160" y2="624.5631067961165" stroke="#000" stroke-width="1.5" data-grab="s2_box_Reserva"/>
+<line x1="920" y1="624.5631067961165" x2="1160" y2="624.5631067961165" stroke="transparent" stroke-width="14" data-grab="s2_box_Reserva"/>
+<polygon points="165,205 155,221 175,221" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="IN1"/>
+<line x1="165" y1="221" x2="165" y2="250" stroke="#000" stroke-width="1.5" data-grab="IN1"/>
+<polygon points="545,205 535,221 555,221" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="IN2"/>
+<line x1="545" y1="221" x2="545" y2="250" stroke="#000" stroke-width="1.5" data-grab="IN2"/>
+<polygon points="560,381 550,397 570,397" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="IN3"/>
+<line x1="560" y1="397" x2="560" y2="430" stroke="#000" stroke-width="1.5" data-grab="IN3"/>
+<polygon points="1010,282 1001,290 1010,299 1019,290" fill="#000" stroke="#000" stroke-width="1.5" data-grab="AG1"/>
+<line x1="1010" y1="265" x2="1010" y2="282" stroke="#000" stroke-width="1.5" data-grab="AG1"/>
+<line x1="1010" y1="299" x2="1010" y2="324.78155339805824" stroke="#000" stroke-width="1.5" data-grab="AG1"/>
+<line x1="1010" y1="265" x2="1010" y2="324.78155339805824" stroke="transparent" stroke-width="12" data-grab="AG1"/>
+<polygon points="1010,487 1001,495 1010,504 1019,495" fill="#fff" stroke="#000" stroke-width="1.5" data-grab="AG2"/>
+<line x1="1010" y1="470" x2="1010" y2="487" stroke="#000" stroke-width="1.5" data-grab="AG2"/>
+<line x1="1010" y1="504" x2="1010" y2="520" stroke="#000" stroke-width="1.5" data-grab="AG2"/>
+<line x1="1010" y1="470" x2="1010" y2="520" stroke="transparent" stroke-width="12" data-grab="AG2"/>
+<line x1="290" y1="250" x2="290" y2="225" stroke="#000" stroke-width="1.5" data-grab="R1"/>
+<line x1="290" y1="250" x2="290" y2="225" stroke="transparent" stroke-width="12" data-grab="R1"/>
+<line x1="290" y1="225" x2="820" y2="225" stroke="#000" stroke-width="1.5" data-grab="R2"/>
+<line x1="290" y1="225" x2="820" y2="225" stroke="transparent" stroke-width="12" data-grab="R2"/>
+<line x1="820" y1="225" x2="820" y2="560" stroke="#000" stroke-width="1.5" data-grab="R3"/>
+<line x1="820" y1="225" x2="820" y2="560" stroke="transparent" stroke-width="12" data-grab="R3"/>
+<line x1="820" y1="560" x2="920" y2="560" stroke="#000" stroke-width="1.5" data-grab="R4"/>
+<line x1="820" y1="560" x2="920" y2="560" stroke="transparent" stroke-width="12" data-grab="R4"/>
+<line x1="700" y1="310" x2="790" y2="310" stroke="#000" stroke-width="1.5" data-grab="C1"/>
+<line x1="700" y1="310" x2="790" y2="310" stroke="transparent" stroke-width="12" data-grab="C1"/>
+<line x1="790" y1="310" x2="790" y2="520" stroke="#000" stroke-width="1.5" data-grab="C2"/>
+<line x1="790" y1="310" x2="790" y2="520" stroke="transparent" stroke-width="12" data-grab="C2"/>
+<line x1="790" y1="520" x2="920" y2="520" stroke="#000" stroke-width="1.5" data-grab="C3"/>
+<line x1="790" y1="520" x2="920" y2="520" stroke="transparent" stroke-width="12" data-grab="C3"/>
+<text x="988" y="286" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1..*</text>
+<text x="1034" y="286" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1</text>
+<text x="988" y="492" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1..*</text>
+<text x="1034" y="492" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1</text>
+<text x="300" y="240" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1</text>
+<text x="560" y="212" font-size="12" font-style="italic" fill="#000" text-anchor="middle" pointer-events="none">realiza</text>
+<text x="828" y="548" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">1..*</text>
+<text x="712" y="332" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">0..1</text>
+<text x="738" y="296" font-size="12" font-style="italic" fill="#000" text-anchor="middle" pointer-events="none">confirma</text>
+<text x="798" y="508" font-size="12" font-style="normal" fill="#000" text-anchor="middle" pointer-events="none">0..*</text>
+</svg>
